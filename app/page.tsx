@@ -7,7 +7,7 @@ import { Phone, Mail, MapPin, Clock } from "lucide-react";
 import { motion } from "framer-motion";
 
 export default function DrManivelClinicWebsite() {
-  const [language, setLanguage] = useState("en");
+  const [language, setLanguage] = useState<"en" | "ta">("en");
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
@@ -82,7 +82,7 @@ Reason: ${formData.message}`
     }
   };
 
-  const content = {
+  const content: Record<"en" | "ta", any> = {
     en: {
       clinicName: "DR MANIVEL CLINIC",
       about: "About",
