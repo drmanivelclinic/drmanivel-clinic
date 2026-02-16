@@ -323,7 +323,7 @@ Reason: ${formData.message}`
                 name="message"
                 value={formData.message}
                 onChange={handleChange}
-                rows="4"
+                rows={4}
                 className="w-full p-3 rounded-xl border"
               />
             </div>
